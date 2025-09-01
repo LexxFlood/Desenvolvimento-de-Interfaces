@@ -6,7 +6,7 @@
     <title>Exemplo 9 - Uso das Tags de Imagem e Imagem </title>
 </head>
 <body>
-    <h1>Exemplo 5 - Uso das Tags de Imagem e Vídeo</h1>
+    <h1>Exemplo 9 - Uso das Tags de Imagem e Vídeo</h1>
     <p>
         Este exemplo mostra diferentes formas de usar as tags <code>&lt;img&gt;</code> e <code>&lt;video&gt;</code>, 
             incluindo o uso de <code>&lt;figure&gt;</code> e <code>&lt;figcaption&gt;</code> para agrupar mídias com legendas.
@@ -25,5 +25,33 @@
     <h2>Exemplos práticos</h2>
     <h3>Imagem usando os atributos img , figure, figcaption</h3>
     <p>Uma imagem agrupada co legenda descritiva</p>
+    <figure>
+        <img src="Lucid_Origin_gere_uma_imagem_de_um_lobo_majestoso_com_asas_rob_2.jpg" alt="img de lobo branco">
+        <figcaption>figura 1: lobo branco </figcaption>
+    </figure>
+    <h3>video com legenda usando &lt;figure&gt; e &lt;figcaption&gt;</h3>
+    <p>exemplo de uso da tag video com legenda agrupada</p>
+    <figure>
+        <video controls width="400">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </figure>
+    <h1>Incorporação de videos do youtube usando a tag &lt;iframe&gt;</h1>
+    <p>neste exemplo iremos usar dois videos do youtube lado a lado usando a tag &lt;figure&gt;</p>
+    <div>
+        <figure>
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/LcYEtuTZGYk?list=RDLcYEtuTZGYk" title="Eu Navegarei |
+             Cover" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+              picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <figcaption>Eu navegarei</figcaption>
+        </figure>
+        <figure>
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/tkhiN-Hvqh4?list=RDtkhiN-Hvqh4" title="Julia Vitoria - Além do Rio Azul (Ao Vivo)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <figcaption>Alem do rio azul</figcaption>
+        </figure>
+    </div>
 </body>
 </html>
