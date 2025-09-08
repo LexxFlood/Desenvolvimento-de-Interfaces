@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 11 - FORMULARIOS</title>
+</head>
+<body>
+    <H1>EXEMPLO 11 HTML - FOMULARIOS</H1>
+    <P>os formulario em html sao um dos principais recursos para a coleta de dados, 
+        eles devem ser simples e altamente funcionais, atendendo sempre as necessidades dis usuarios.</P>
+    <p>Para trabalhar com formulario em html, possuimos uma serie de componentes que vao facilitar o processo de interacao com o usuario. Todos os furmularios começam necessariamente com a tag &lt;form&gt; essa tag indica para o navegador que a pagina html possui um formulario que pode enviar dados.</p>
+    <p>Além da tag &lt;form&gt; temos tambem que usae os atributos action que define o local -url- em que os dados recolhidos/coletados devem ser enviados, e o method que define qual o metodo http para enviar os dados GET ou POST. </p>
+    <h2>Exemplo Prático = Tela de login</h2>
+
+    <form action="paginaDestino.php" method="get">
+        <label for="">Usuario</label>
+        <br>
+        <input type="text" name="txtUsuarioName" id="txtUsuarioID">
+        <br>
+        <label for="">senha</label>
+        <br>
+        <input type="password" name="txtSenhaName" id="txtSenhaID">
+        <br>
+        <button type="submit">Logar</button>
+        <br>
+    </form>
+</body>
+</html>

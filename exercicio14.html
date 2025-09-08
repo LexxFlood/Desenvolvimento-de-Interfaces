@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 14 html</title>
+</head>
+<body>
+    <h1>Exemplo 14 html - formularios</h1>
+    <h2>Formulario de casatro</h2>
+    <form action="paginaDestino.java" method="get">
+        <div>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <br>
+                <label for="">CPF</label><br>
+                <input type="text" name="txtCPF" id="txtCPF" required><br>
+                <label for="">RG</label><br>
+                <input type="text" name="txtRG" id="txtRG" required><br>
+                <label for="">Digite o seu Nome</label><br>
+                <input type="text" name="txtNome" id="txtNome"><br>
+                <label for="">Ano Nascimento</label><br>
+                <input type="number" name="txtAnoNascimento" id="txtAnoNascimento" min="1910" max="2100" step="1"><br>
+                <label for="">Sexo</label><br>
+                <input type="radio" name="radioSexo" id="radioSexo" value="1"> Feminino
+                <input type="radio" name="radioSexo" id="radioSexo" value="2"> Masculino
+                <br>
+                <label for="">Estado Civil</label><br>
+                <select name="cboEstadoCivil" id="cboEstadoCivil">
+                    <option value="1">Casado</option>
+                    <option value="2">Solteiro</option>
+                    <option value="3">Viúvo</option>
+                    <option value="4">Divorciado</option>
+                    <option value="5">Tico-tico no fubá</option>
+                    <option value="6">Outros</option>     
+                </select>
+              </fieldset>
+
+        </div>
+        <br>
+        <div>
+        <fieldset>
+            <legend>preferencia</legend>
+            <fieldset>
+                <legend>escolha um ou mais locais de lazer</legend>
+                <input type="checkbox" name="cktipolazer" id="cktipolazer" value="1"> cidade <br>
+                <input type="checkbox" name="cktipolazer" id="cktipolazer" value="2"> montanha <br>
+                <input type="checkbox" name="cktipolazer" id="cktipolazer" value="3"> parque <br>
+                <input type="checkbox" name="cktipolazer" id="cktipolazer" value="4"> lagoa <br>
+            </fieldset>
+            <fieldset>
+                <legend>escolha uma regiao favorita</legend>
+                <input type="radio" name="radioregiao" id="radioregiao" value="1">nordeste<br>
+                <input type="radio" name="radioregiao" id="radioregiao" value="2">sul<br>
+                <input type="radio" name="radioregiao" id="radioregiao" value="3">sudeste<br>
+                <input type="radio" name="radioregiao" id="radioregiao" value="4">norte<br>
+                <input type="radio" name="radioregiao" id="radioregiao" value="5">centro oeste<br>
+            </fieldset>
+        </fieldset>
+        </div>
+        <br>
+        <div>
+            <label for="">dados cadastrados</label>
+            <table width="80%">
+                <tr>
+                    <th>cpf</th>
+                    <th>nome</th>
+                    <th>ano de nascimento</th>
+                </tr>
+                <tr>
+                    <td>555.999.777-85</td>
+                    <td>jose de couves</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>555.999.777-85</td>
+                    <td>alala de couves</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>555.999.777-85</td>
+                    <td>ghi de couves</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>555.999.777-85</td>
+                    <td>def de couves</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>555.999.777-85</td>
+                    <td>abc de couves</td>
+                    <td>1995</td>
+                </tr>
+            </table>
+            <button type="submit">cadastrar</button>
+        </div>
+    </form>
+
+</body>
+</html>
