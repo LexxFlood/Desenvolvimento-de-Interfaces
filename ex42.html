@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> Ex 42</title>
+</head>
+<body>
+    <div class="container-sm">
+        <h1>Exemplo 42 - Bootstrap - Grid</h1>
+        <div class="card">
+            <div class="card-header">
+                Cadastro Cliente
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <label for="email">Endereço de E-mail</label>
+                        <input type="email" name="email" id="email" class="form-control is-invalid" placeholder="seuemail@exemplo.com">
+                        <div class="invalid-feedback">
+                            Por favor, insira um e-mail válido.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="cpf" class="form-control" placeholder="000.000.000-00">
+                        <div class="invalid-feedback">
+                            Campo preenchido corretamente
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <label for="cidade">Cidade <span class="text-danger">*</span></label>
+                        <input type="text" name="cidade" id="cidade" class="form-control">
+                    </div>
+                    <div class="col-4">
+                        <label for="estado">Estado <span class="text-danger">*</span></label>
+                        <select class="form-select" id="estado" aria-label="Default select example">
+                            <option selected>Selecione</option>
+                            <option value="1">Distrito Federal</option>
+                            <option value="2">São Paulo</option>
+                            <option value="3">Minas Gerais</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2">
+                        <label for="cep">CEP <span class="text-danger">*</span></label>
+                        <input type="text" name="cep" id="cep" class="form-control" placeholder="00000-000">
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="text-end">
+                    <button type="button"></button>
+                    <button type="button"></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
